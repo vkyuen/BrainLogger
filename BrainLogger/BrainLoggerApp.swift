@@ -1,11 +1,5 @@
-//
-//  BrainLoggerApp.swift
-//  BrainLogger
-//
-//  Created by Veronica Yuen on 12/17/24.
-//
-
 import SwiftUI
+import SwiftData
 
 @main
 struct BrainLoggerApp: App {
@@ -13,5 +7,6 @@ struct BrainLoggerApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for:Todo.self)
     }
 }
